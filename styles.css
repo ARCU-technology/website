@@ -4,7 +4,9 @@ body, html {
     height: 100%;
     /* width: 100%; */
     font-family: 'Montserrat', sans-serif;
-  }
+    font-weight: 500;
+    overflow-x: hidden;
+    }
   
   .container {
     max-width: 1200px;
@@ -20,19 +22,21 @@ body, html {
 
   .header {
     position: absolute;
-    top: 10%;
+    top: 9%;
     left: 8%;
-    display: block;
-    font-size: 64px;
-    font-weight: 700;    
+    display: block;  
   }
 
   .main-title-top {
-    color: #f44336;   
+    font-weight: 700;
+    font-size: 94px;
+    color: #ff2f00;   
   }
 
 .main-title-bottom {
-    color: #2a7fc3;
+    color: #4449b5;
+    font-size: 56px;
+    font-weight: 700;  
 }
 
 .customer-title {
@@ -107,20 +111,20 @@ body, html {
 
 .lines-top {
     /* display: block; */
-    color: #f44336;
+    color: #ff2f00;
     font-weight: 700;
     font-size: 28px;
 }
 
 .lines-bottom {
     /* display: block; */
-    color: #2a7fc3;
+    color: #4449b5;
     /* width: max-content; */
 }
 
 .normal-text {
     /* display: block; */
-    color: #2a7fc3;
+    color: #4449b5;
     position: absolute;
     margin-top: 93px;
     /* margin-right: 20px; */
@@ -183,14 +187,14 @@ body, html {
     padding: 8px 8px;
     margin-top: 5%;
     color: #ffffff;
-    background-color: #2a7fc3;
+    background-color: #4449b5;
     border-radius: 2px;
     transition: background-color 0.3s ease;
 }
 
   
   .read-more-btn:hover {
-    background-color: #f44336;
+    background-color: #ff2f00;
   }
 
   .contact-section {
@@ -215,7 +219,7 @@ body, html {
     font-size: x-large;
     padding: 16px 16px;
     color: #ffffff;
-    background-color: #f44336;
+    background-color: #ff2f00;
     border-radius: 2px;
     transition: background-color 0.3s ease;
     top: 44%;
@@ -225,7 +229,7 @@ body, html {
   
   
   .contact-btn:hover {
-    background-color: #2a7fc3;
+    background-color: #4449b5;
   }
 
 
@@ -314,13 +318,13 @@ body, html {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* background-color: #2a7fc3; */
+    /* background-color: #4449b5; */
     padding: 0 16px;
     height: 64px;
   }
   
   .navbar-logo {
-    color: #f44336;
+    color: #ff2f00;
     font-size: 24px;
     text-decoration: none;
     padding: 8px 8px;
@@ -338,14 +342,14 @@ body, html {
   }
   
   .navbar-link {
-    color: #2a7fc3;
+    color: #4449b5;
     text-decoration: none;
     font-size: 18px;
     padding: 8px 8px;
   }
 
   .navbar-link:hover {
-    background-color: #f44336;
+    background-color: #ff2f00;
     color: #ffffff;
   }
   
@@ -360,7 +364,7 @@ body, html {
     display: inline-block;
     width: 24px;
     height: 2px;
-    background-color: #2a7fc3;
+    background-color: #4449b5;
     position: relative;
   }
   
@@ -371,7 +375,7 @@ body, html {
     left: 0;
     width: 100%;
     height: 2px;
-    background-color: #2a7fc3;
+    background-color: #4449b5;
   }
   
   .navbar-toggler-icon::before {
@@ -391,7 +395,7 @@ body, html {
 
   footer {
     position: relative;
-    background-color: #333;
+    background-color: #24224a;
     color: #ffffff;
     padding: 16px 0;
     /* font-family: Arial, sans-serif; */
@@ -460,7 +464,7 @@ body, html {
     transform: translateX(-50%);
     width: 66px;
     height: 66px;
-    border: 2px solid #2a7fc3;
+    border: 2px solid #4449b5;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -475,7 +479,7 @@ body, html {
     /* margin-bottom: 5px; */
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
-    border-top: 16px solid #2a7fc3;
+    border-top: 16px solid #4449b5;
   }
   
 
@@ -496,7 +500,7 @@ body, html {
     transform: translateX(-50%);
     width: 66px;
     height: 66px;
-    border: 2px solid #2a7fc3;
+    border: 2px solid #4449b5;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -510,7 +514,7 @@ body, html {
     margin-left: 2px;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
-    border-top: 16px solid #2a7fc3;
+    border-top: 16px solid #4449b5;
   }
   
   @keyframes bounce {
@@ -545,7 +549,7 @@ body, html {
       top: 64px;
       right: 16px;
       flex-direction: column;
-      background-color: #2a7fc3;
+      background-color: #4449b5;
       width: 200px;
       padding: 16px;
       display: none;
