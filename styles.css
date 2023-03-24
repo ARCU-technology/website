@@ -9,6 +9,20 @@ body, html {
     background-color: #f8f3f7;
     }
   
+  .in-text a{
+    text-decoration: none;
+    color: #4449b5;
+  }
+  /* make hover effect */
+  .in-text a:hover {
+    color: #ff2f00;
+  }
+
+
+
+
+
+
   .container {
     max-width: 1200px;
     position: relative;
@@ -128,7 +142,7 @@ body, html {
     color: #ff2f00;
     font-weight: 700;
     font-size: 28px;
-    
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff;
 }
 
 .lines-bottom {
@@ -146,7 +160,8 @@ body, html {
     max-width: 74%;
     font-size: 18px;
     font-weight: 500;
-    text-align: justify;
+    /* text-align: justify; */
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff;
 }
   
   .line1 {
@@ -213,6 +228,7 @@ body, html {
     background-color: #4449b5;
     border-radius: 2px;
     transition: background-color 0.3s ease;
+    text-shadow: none;
 }
 
   
@@ -495,7 +511,7 @@ body, html {
   }
   
   .footer-column a:hover {
-    color: #4449b5;
+    color: #ff2f00;
   }
   
   .footer-bottom {
@@ -622,13 +638,13 @@ body, html {
         font-size: 14px;
         max-width: 90%;
         font-weight: 600;
-        text-align: left;
       }
 
       .about-text {
         font-size: 14px;
         max-width: 90%;
         font-weight: 600;
+        text-align: left;
       }
 
       .norm-right {
