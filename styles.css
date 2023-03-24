@@ -6,38 +6,51 @@ body, html {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     overflow-x: hidden;
+    background-color: #f8f3f7;
     }
   
   .container {
     max-width: 1200px;
     position: relative;
+    background-color: #ffffff;
   }
 
+
+/* header */
+
   .header-container {
-    /* position: relative; */
-    margin-top: 10vh;
-    height: 100vh;
-    
+    position: relative;
+    margin-top: 10%;
+    margin-bottom: 200px;
+  }
+
+  .header-image {
+    max-width: 66%;
+    margin-left: 33%;
   }
 
   .header {
     position: absolute;
-    top: 9%;
+    top: 6%;
     left: 8%;
     display: block;  
   }
 
   .main-title-top {
     font-weight: 700;
-    font-size: 94px;
+    font-size: 64px;
     color: #ff2f00;   
   }
 
 .main-title-bottom {
     color: #4449b5;
-    font-size: 56px;
+    font-size: 46px;
     font-weight: 700;  
 }
+
+
+
+/* customer  */
 
 .customer-title {
     display: block;
@@ -50,8 +63,8 @@ body, html {
     justify-content: space-between;
     width: 100%;
     max-width: 800px;
-    margin: 36px auto 15%;
-    padding: 0 12px;
+    margin: 36px auto 200px;
+    /* padding: 0 12px; */
   }
 
   
@@ -68,7 +81,7 @@ body, html {
   }
 
   .small-title {
-    font-size: larger;
+    font-size: 1.2em;
     font-weight: 700;
     margin-top: -40px;
     margin-left: 10%
@@ -78,42 +91,44 @@ body, html {
     padding-top: 10px;
   }
 
+
+
+
+  /* services sections  */
+
   .title-section {
-    position: absolute;
-    margin-top: 2%;
+    /* position: absolute; */
+    /* margin-top: 2%; */
     display: block;
-    font-size: xx-large;
+    /* font-size: xx-large; */
     font-weight: 700;    
   }
 
   .right {
-    right: 274px;
+    display: flex;
+    justify-content: right;
   }
 
   .left {
-    left: 290px;
+    justify-content: left;
   }
 
   .norm-left {
-    left: 360px;
+    margin-left: 4%;
   }
 
   .norm-right {
-    right: 320px;
-  }
-  
-  .header-image {
-    position: absolute;
-    top: 6%;
-    right: 0;
-    max-width: 66%;
+    margin-left: 20%;
+    margin-right: 4%;
   }
 
+
 .lines-top {
-    /* display: block; */
+    display: flex;
     color: #ff2f00;
     font-weight: 700;
     font-size: 28px;
+    
 }
 
 .lines-bottom {
@@ -125,10 +140,10 @@ body, html {
 .normal-text {
     /* display: block; */
     color: #4449b5;
-    position: absolute;
-    margin-top: 93px;
+    /* position: absolute; */
+    margin-top: 46px;
     /* margin-right: 20px; */
-    max-width: 50%;
+    max-width: 74%;
     font-size: 18px;
     font-weight: 500;
     text-align: justify;
@@ -150,27 +165,36 @@ body, html {
 
   .section-container {
     display: flex;
-    justify-content: space-between;
-    height: 500px;
+    /* justify-content: space-between; */
+    margin-bottom: 200px;
 
-  }
-
-  .image-right {
-    position: absolute;
-    right: 0;
-  }
-
-  .image-left {
-    position: absolute;
-    left: 0;
   }
 
   .section-image {
-    max-width: 64%;
+    max-width: 86%;
     height: auto;
   }
 
-  
+  .text-left {
+    position: absolute;
+    /* display: flex; */
+
+    margin-left: 20%;
+    margin-top: 1%;
+  }
+
+  .text-right {
+    position: absolute;
+    /* display: flex; */
+    margin-right: 26%;
+    margin-top: 1%;
+  }
+
+  .right-image {
+    margin-left:0;
+  }
+
+
   body.js-enabled .animated {
     opacity: 1;
   }
@@ -183,7 +207,6 @@ body, html {
   .read-more-btn {
     display: inline-block;
     text-decoration: none;
-    font-size: large;
     padding: 8px 8px;
     margin-top: 5%;
     color: #ffffff;
@@ -196,6 +219,33 @@ body, html {
   .read-more-btn:hover {
     background-color: #ff2f00;
   }
+
+
+/* About Us */
+.about-section {
+  margin: 0 auto 140px;
+}
+
+.about-text {
+  /* text-align: center; */
+  color: #4449b5;
+  max-width: 74%;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: justify;
+  margin: 0 auto;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+
+
+  /* Contact */
 
   .contact-section {
     position: relative;
@@ -216,7 +266,8 @@ body, html {
     z-index: 10;
     display: inline-block;
     text-decoration: none;
-    font-size: x-large;
+    font-size: 22px;
+    font-weight: 700;
     padding: 16px 16px;
     color: #ffffff;
     background-color: #ff2f00;
@@ -395,16 +446,18 @@ body, html {
 
   footer {
     position: relative;
-    background-color: #24224a;
-    color: #ffffff;
-    padding: 16px 0;
+    background-color: #f8f3f7;
+    color: #ff2f00;
+    padding: 6px 0;
     /* font-family: Arial, sans-serif; */
     z-index: 20;
+    max-width: 1200px;
+
   }
   
   .footer-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
@@ -412,7 +465,7 @@ body, html {
   
   .footer-column {
     width: 33%;
-    padding: 0 15px;
+    /* padding: 0 15px; */
   }
   
   .footer-column h3 {
@@ -424,7 +477,7 @@ body, html {
   .footer-column p {
     font-size: 0.9em;
     line-height: 1.4;
-    color: #ccc;
+    color: #4449b5;
   }
   
   .footer-column ul {
@@ -437,66 +490,39 @@ body, html {
   }
   
   .footer-column a {
-    color: #ccc;
+    color: #4449b5;
     text-decoration: none;
   }
   
   .footer-column a:hover {
-    color: #ffffff;
+    color: #4449b5;
   }
   
   .footer-bottom {
-    text-align: right;
+    text-align: center;
     font-size: 0.8em;
-    color: #ccc;
-    margin-right: 25px;
-  }
-
-  .scroll-indicator-container {
-    position: relative;
-    height: 80vh;
-  }
-  
-  .scroll-indicator {
-    position: absolute;
-    bottom: 20px;
-    left: 26%;
-    transform: translateX(-50%);
-    width: 66px;
-    height: 66px;
-    border: 2px solid #4449b5;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .arrow-down {
-    display: inline-block;
-    width: 0;
-    height: 0;
-    margin-left: 2px;
-    /* margin-bottom: 5px; */
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-top: 16px solid #4449b5;
+    color: #4449b5;
+    /* margin-right: 25px; */
   }
   
 
-  .scroll-indicator-container {
-    position: relative;
-    height: 80vh;
+  #scroll-indicator-container {
+    position: fixed; /* Change to fixed */
+    bottom: 0;
+    margin-left: 10%;
     opacity: 1;
-    z-index: -1;
-    transition: opacity 3s ease;
+    z-index: 10;
+    transition: opacity 0.5s ease; /* Adjust the transition time as needed */
     animation: bounce 1.5s ease-in-out infinite;
   }
   
-
+  
+  
+  .hide-scroll-indicator {
+    opacity: 0 !important;
+  }
+  
   .scroll-indicator {
-    position: absolute;
-    bottom: 20px;
-    left: 26%;
     transform: translateX(-50%);
     width: 66px;
     height: 66px;
@@ -505,7 +531,10 @@ body, html {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 16%; /* Adjust this value as needed */
+    margin-left: 16%;
   }
+  
   
   .arrow-down {
     display: inline-block;
@@ -532,18 +561,13 @@ body, html {
       transform: translateY(-15px);
     }
   }
-  
-  .hide {
-    opacity: 0;
-    transition: opacity 1s ease;
-  }
 
 
 
 
 
 
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 1100px) {
     .navbar-menu {
       position: absolute;
       top: 64px;
@@ -572,12 +596,23 @@ body, html {
 
   @media screen and (max-width: 640px) {
   
-    .header-container{
+    /* .header-container{
         max-height: 500px;
-    }
+    } */
     
-    .header {
+    /* .header {
         font-size: 7vw;
+      } */
+
+      .main-title-top {
+        font-size: 8vw;
+      }
+      .main-title-bottom {
+        font-size: 6vw;
+      }
+
+      .small-title {
+        font-size: 1em;
       }
   
       .lines-top {
@@ -585,48 +620,24 @@ body, html {
       }
       .normal-text {
         font-size: 14px;
+        max-width: 90%;
       }
 
-      .section-container {
-        display: block;
+      .about-text {
+        font-size: 14px;
+        max-width: 90%;
       }
-    
-      .normal-text {
-        position: relative;
-        margin-left: 12px;
-        margin-right: 12px;
-        margin-top: 28px;
-        max-width: 68%;
-    }
-    .norm-left {
-        left: 0;
-        float: right;
-      }
-    
+
       .norm-right {
-        right: 0;
+        margin-left: 4%;
       }
-    
-    /* .right {
-        right: 0;
-        margin-right: 12px;
-    } */
-    
-    .left, .right {
-        left: 0;
-        margin-left: -15%;
-        text-align: center;
-    }
-    
-    .title-section {
-        position: relative;
-        display: block;  
-      }
-    
       .section-image {
-        margin-top: 8%;
+        max-width: 60%;
       }
-
+      .right-image {
+        margin-left: 40%;
+      }
+    
       .customer-container {
         flex-wrap: wrap;
         margin: 43px auto 50%;
