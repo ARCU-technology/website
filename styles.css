@@ -621,11 +621,14 @@ body, html {
       .normal-text {
         font-size: 14px;
         max-width: 90%;
+        font-weight: 500;
+        text-align: left;
       }
 
       .about-text {
         font-size: 14px;
         max-width: 90%;
+        font-weight: 500;
       }
 
       .norm-right {
