@@ -1,5 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Datalab CSN - ARCU.technology</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="icon" href="https://arcu.technology/favicon.png">
 
+  
+  
+  <link rel="stylesheet" href="/css/style.min.4e8e94524856c0bab46bd12eae6e3cf7891de46ab58b1debdd760f5b3d82f479.css">
+  
+
+  
 <meta name="description" content="Datalab CSN" />
 <meta property="og:title" content="Datalab CSN" />
 <meta property="og:type" content="website" />
@@ -7,7 +22,189 @@
 <meta property="og:description" content="Explore the Collection Spaces of Badisches Landesmuseum Karlsruhe and Allard Pierson Museum Amsterdam with the Datalab CSN" />
 
 
+</head>
+
+<body class='page page-work-single'>
+  <div id="main-menu-mobile" class="main-menu-mobile">
+  <ul>
+    
+    
+    <li class="menu-item-about">
+      <a href="/about/">
+        
+        <span>About</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-write us">
+      <a href="mailto:mail@arcu.technology">
+        
+        <span>Write Us</span>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+  <div id="wrapper" class="wrapper">
+    <div class='header header-absolute'>
+  <div class="container">
+    <div class="logo">
+      <a href="https://arcu.technology/"><img height=ZgotmplZ width=ZgotmplZ alt="ARCU.technology logo" src="/images/logo_right.svg" /></a>
+    </div>
+    <div class="logo-mobile">
+      <a href="https://arcu.technology/"><img height=ZgotmplZ width=ZgotmplZ alt="ARCU.technology logo" src="/images/logo_mobile_right.svg" /></a>
+    </div>
+    <div id="main-menu" class="main-menu">
+  <ul>
+    
+    
+    <li class="menu-item-about">
+      <a href="/about/">
+        
+        <span>About</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-write us">
+      <a href="mailto:mail@arcu.technology">
+        
+        <span>Write Us</span>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+    <button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button" aria-label="Toggle Menu">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+  </div>
+</div>
+    
+<div id="hero" class="hero-image hero-image-setheight" style="background-image: url('/')">
+  <div class="container ">
+    <div class="hero-text">
+      <span class="hero-section">work</span>
+      <h1>Datalab CSN</h1>
+      <p>Explore the Collection Spaces of Badisches Landesmuseum Karlsruhe and Allard Pierson Museum Amsterdam with the Datalab CSN</p>
+    </div>
+  </div>
+</div>
+  
+<div class="container pt-4 pt-md-10 pb-4 pb-md-10">
+  <div class="row justify-content-start">
+    <div class="col-12 col-md-8">
+      <div class="work work-single">
+        <div class="content"><p>Imagine wandering through the vast digital collections of the Badisches Landesmuseum Karlsruhe and the Allard Pierson Museum Amsterdam, each holding a treasure of objects waiting to be explored. The Collection Space Navigator <a href="#references">(Ohm et al., 2023)</a> serves as a virtual guide and offers a new way to engage with these collections. As part of the Creative User Empowerment project, the Datalab CSN becomes a bridge between the curator&rsquo;s expertise and the rich visual data available to them.</p>
+<p><a href="https://datalab.landesmuseum.de/CSN/"><img src="/work/Datalab_CSN.jpg" alt="Datalab CSN"></a>
+<a href="https://datalab.landesmuseum.de/CSN/">https://datalab.landesmuseum.de/CSN/</a></p>
+<h3 id="visual-similarity-an-alternative-approach">Visual Similarity: an alternative approach</h3>
+<p>Navigating extensive cultural collections is challenging due to scale, rigid categorization, and limited support for serendipitous exploration. When it comes to image exploration, conventional methods of categorization based on class labels may seem intuitive, but they impose restrictions on the fluid nature of visual content. A text-based analysis of images can miss many aspects of the visual data and ignore the complex interactions among different visual elements <a href="#references">(Arnold &amp; Tilton, 2023, p.38)</a>.</p>
+<p>An alternative approach is similarity-based navigation using interactive visualizations. Utilizing image vectors provides an effective way to decode the complexity of visual relationships. An image vector is a numerical descriptor representing the visual features of an image. What makes it so valuable is its ability to group images based on their technical characteristics. This, in turn, allows human viewers to explore these image groups before attributing meanings to them.</p>
+<p>For our Datalab CSN, we utilized a <em>Convolutional Neural Network</em> that acts as a visual connoisseur. In particular, we used a <em>ResNet50</em> <a href="#references">(He et al., 2016)</a> model, trained on the <em>ImageNet</em> <a href="#references">(Deng et al., 2009)</a> dataset, encoding images into feature vectors. These vectors serve as digital fingerprints, resulting in a multidimensional space with 2048 dimensions.</p>
+<p>To translate this multidimensional vector space into a comprehensible 2D visualization, we applied a Dimensionality Reduction method called UMAP (short for <em>Uniform Manifold Approximation and Projection</em>) <a href="#references">(McInnes et al., 2018)</a>. To ease the user experience and focus more on the collections, we opted for only one projection method for the Datalab CSN.</p>
+<p>This map then serves as a visual interpretation of the multidimensional data, in which images with visual similarities appear close to each other. Reducing hundreds of dimensions down to only two can never fully reflect the richness of the original data. While useful for visual examination and exploration, it is only an approximation of the underlying multidimensional space. Therefore, we should be careful not to over-interpret the result <a href="#references">(cf. Chari &amp; Pachter, 2023)</a>.</p>
+<h3 id="using-the-datalab-csn">Using the Datalab CSN</h3>
+<p>The <em><strong>Collection Space Navigator (CSN)</strong></em> user interface allows you to explore the collection data by zooming in and out, moving around, filtering the museum objects by time, or using advanced search queries to narrow down specific interests and aspects. The filtered data can be downloaded as metadata (CSV file) or spatial similarity map (PNG image) and is therefore available for further research. Clicking on an object reveals the corresponding collection data in the museum database.</p>
+<p>With the sliders on the right-hand side under <em><strong>Time Filter</strong></em>, you can not only control the range of years to filter the objects based on their creation dates, but also display the distribution within the subset collection in the form of interactive histograms. If you click on a histogram, you can glide through time by swiping over the bars and display all objects they entail.</p>
+<p>The spatial navigation and filtering options allow users to curate their own journey through the collections and discover connections and patterns that might have remained unnoticed with traditional approaches to overviewing collection data. This approach makes it possible to make clusters and correlations visible, but also to visualize existing &ldquo;errors&rdquo; in the metadata – and thus create the basis for improving the data basis.</p>
+<p>For example, one of the internal issues that the Datalab CSN uncovered was the sometimes incorrect IDs to the image database of the Badisches Landesmuseum. A previous experiment to automatically match the image content from two different sources led to a few errors, now evident in the CSN. This makes it possible for all users to work with the collections and make suggestions or improvements. We look forward to your ideas!</p>
+<h3 id="explore-the-collections">Explore the collections</h3>
+<p>The <a href="https://datalab.landesmuseum.de/CSN/?dataset=Landesmuseum+Collections">Landesmuseum Collections (61 MB)</a> dataset entails more than 27 thousand objects. We divided this large selection further into smaller subsets to improve loading times and to highlight different collecting aspects. <a href="https://datalab.landesmuseum.de/CSN/?dataset=Landesmuseum+Photographic">Landesmuseum Photographic (42 MB)</a> lets you discover over 18 thousand photographs within the Badische Landesmuseum repertoire. <a href="https://datalab.landesmuseum.de/CSN/?dataset=Landesmuseum+None-Photographic">Landesmuseum None-Photographic (21 MB)</a> presents the reverse concept with 9 thousand objects that are not photographic works. Special attention is paid to <a href="https://datalab.landesmuseum.de/CSN/?dataset=Landesmuseum+Antique">Landesmuseum Antique (5 MB)</a>, which reveals the almost 3 thousand treasures dated before the 15th century. The Allard Pierson collection is presented without the vast amount of literature to highlight the visual objects in  <a href="https://datalab.landesmuseum.de/CSN/?dataset=Allard+Pierson+None-Literature">Allard Pierson None-Literature (10 MB)</a>, including 4 thousand museum objects.</p>
+<p>As you delve into the collections of Badisches Landesmuseum and Allard Pierson, the CSN becomes a versatile tool for researchers, curators and an interested audience. It not only enhances the exploration of individual subsets but also serves as a starting point for further research. The tool&rsquo;s ability to filter objects allows it to uncover relationships and trends that contribute to a richer understanding of the collection as a whole.</p>
+<p>The Collection Space Navigator was developed by Tillmann Ohm and Mar Canet Solà and adapted within the framework of <a href="https://datalab.landesmuseum.de">Creative User Empowerment</a> (2023) by Tillmann Ohm, Etienne Posthumus, and Sonja Thiel.</p>
+<p>Datalab CSN: <a href="https://datalab.landesmuseum.de/CSN/">https://datalab.landesmuseum.de/CSN/</a><br>
+Open Source code Datalab CSN: <a href="https://github.com/Badisches-Landesmuseum/CSN">https://github.com/</a><br>
+Original Collection Space Navigator: <a href="https://collection-space-navigator.github.io/">https://collection-space-navigator.github.io/</a></p>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<h3 id="references">References</h3>
+<p>Arnold, T., &amp; Tilton, L. (2023). Distant Viewing: Computational Exploration of Digital Images. The MIT Press. <a href="https://doi.org/10.7551/mitpress/14046.001.0001">https://doi.org/10.7551/mitpress/14046.001.0001</a></p>
+<p>Chari, T., &amp; Pachter, L. (2023). The specious art of single-cell genomics. PLOS Computational Biology, 19(8), e1011288. <a href="https://doi.org/10.1371/journal.pcbi.1011288">https://doi.org/10.1371/journal.pcbi.1011288</a></p>
+<p>Deng, J., Dong, W., Socher, R., Li, L.-J., Li, K., &amp; Fei-Fei, L. (2009). ImageNet: A large-scale hierarchical image database. 2009 IEEE Conference on Computer Vision and Pattern Recognition, 248–255. <a href="https://doi.org/10.1109/CVPR.2009.5206848">https://doi.org/10.1109/CVPR.2009.5206848</a></p>
+<p>He, K., Zhang, X., Ren, S., &amp; Sun, J. (2016). Deep Residual Learning for Image Recognition. 2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 770–778. <a href="https://doi.org/10.1109/CVPR.2016.90">https://doi.org/10.1109/CVPR.2016.90</a></p>
+<p>McInnes, L., Healy, J., &amp; Melville, J. (2018). UMAP: Uniform Manifold Approximation and Projection for Dimension Reduction. arXiv:1802.03426 [Cs, Stat]. <a href="http://arxiv.org/abs/1802.03426">http://arxiv.org/abs/1802.03426</a></p>
+<p>Ohm, T., Canet Sola, M., Karjus, A., &amp; Schich, M. (2023). Collection Space Navigator: An Interactive Visualization Interface for Multidimensional Datasets. Proceedings of the 16th International Symposium on Visual Information Communication and Interaction, 1–5. <a href="https://doi.org/10.1145/3615522.3615546">https://doi.org/10.1145/3615522.3615546</a></p>
+</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+
+  <div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="footer-inner">
+          
+          
+          <ul class="social">
+              
+                  <li><a href="https://www.linkedin.com/company/arcu-technology" target="blank"><img width="20" height="20" src="/social/linkedIn.svg" title="LinkedIn" alt="LinkedIn" /></a></li>
+              
+          </ul>
+          
+          
+          <ul class="footer-menu">
+            <li><a href="https://arcu.technology/">Home</a></li>
+            
+                <li><a href="/about/">About</a></li>
+            
+                <li><a href="mailto:mail@arcu.technology">Write Us</a></li>
+            
+        </ul>
+          
+          <div class="legal-notes">
+            <p>Email: <a href="mailto:mail@arcu.technology">mail@arcu.technology</a></p>
+
+          </div>
+          
+          <div class="contact-info">
+            <p>ARCU.technology OÜ</p>
+            <p>Proprietor: Tillmann Ohm</p>
+            <p>Registry code: 16854804</p>
+            <p class="copyright">© 2023 ARCU.technology OÜ</li>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+
+  
+
+  
 
 
 
 
+  <script type="text/javascript" src="/js/services.min.9107b65a7df0422d8a274963e6b560062a6cdf62185570cfd584b43defa67279.js"></script>
+  
+
+
+  
+  <script type="text/javascript" src="/js/scripts.min.8504133605a277da18f0d58cfd2e90d154962f4a961543a6e2f0a459a2d05462.js"></script>
+  
+
+  
+  
+  
+    
+      
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-WCJ5FEQCDB"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-WCJ5FEQCDB');
+      </script>
+    
+  
+
+
+</body>
+</html>
